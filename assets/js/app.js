@@ -395,7 +395,7 @@ function initShopify(){
         ...commonOptions,
         product: {
           ...commonOptions.product,
-          text: { button: 'Order Small' },
+          text: { button: 'Order Now' },
           styles: {
             ...commonOptions.product.styles,
             product: { 'text-align': 'center', 'margin': '0', 'max-width': '100%' },
