@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1175265841425591');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=1175265841425591&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Baklawa Bites — Eid Collection</title>
+<meta name="description" content="Handmade, honeyed Baklawa Bites in gift-ready packaging. Celebrate Eid Al-Fitr with Small, Medium, or Large trays — fresh made to order."/>
+<link href="assets/images/logo.svg" rel="icon" type="image/svg+xml"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+
+<!-- Islamic geometric pattern overlay -->
+<div class="geo-pattern" aria-hidden="true"></div>
+
+<!-- Floating lanterns -->
+<div class="lanterns" aria-hidden="true">
+  <div class="lantern l1">
+    <div class="lantern__body">
+      <div class="lantern__light"></div>
+      <div class="lantern__flame"></div>
+    </div>
+    <div class="lantern__string"></div>
+  </div>
+  <div class="lantern l2">
+    <div class="lantern__body">
+      <div class="lantern__light"></div>
+      <div class="lantern__flame"></div>
+    </div>
+    <div class="lantern__string"></div>
+  </div>
+  <div class="lantern l3">
+    <div class="lantern__body">
+      <div class="lantern__light"></div>
+      <div class="lantern__flame"></div>
+    </div>
+    <div class="lantern__string"></div>
+  </div>
+</div>
+
+<!-- Starfield canvas -->
+<canvas id="starfield" class="stars-canvas" aria-hidden="true"></canvas>
+<div class="stars-fallback" aria-hidden="true"></div>
+
+<!-- Crescent moon -->
+<div class="corner-moon" aria-hidden="true">
+  <img class="moon-img" src="assets/images/crescent.webp" alt=""/>
+</div>
+
+<!-- Confetti container (triggered on load) -->
+<div class="confetti-wrap" aria-hidden="true" id="confetti"></div>
+
+<!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
+<header class="topbar" id="top">
+  <div class="container topbar__inner">
+    <a class="brand" href="#top" aria-label="Baklawa Bites Home">
+      <img class="brand__mark" src="assets/images/logo.svg" alt="Baklawa Bites"/>
+      <div class="brand__text">
+        <span class="brand__name">Baklawa Bites</span>
+        <span class="brand__sub">عيد مبارك</span>
+      </div>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__link" href="#shop">Shop</a>
+      <a class="nav__link" href="#gallery">Gallery</a>
+      <a class="nav__link" href="#faq">FAQ</a>
+    </nav>
+
+    <div class="topbar__cta">
+      <a class="btn btn--gold" href="#shop">Order Now</a>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════ MAIN ═══════════════════════════════ -->
+<main>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="hero-section">
+    <!-- Eid banner ribbon -->
+    <div class="eid-ribbon reveal">
+      <span class="eid-ribbon__star">✦</span>
+      <span>Eid Al-Fitr Collection — Celebrating the End of Ramadan</span>
+      <span class="eid-ribbon__star">✦</span>
+    </div>
+
+    <div class="container hero__grid">
+      <div class="hero__copy reveal">
+        <p class="eyebrow">Handmade · Gift-Ready · Eid 2025</p>
+        <h1>
+          <span class="hero__h1-line1">Baklawa that</span>
+          <span class="hero__h1-line2">looks as good</span>
+          <span class="hero__h1-line3">as it tastes.</span>
+        </h1>
+        <p class="subhead">Elegant trays of perfectly crisp, syruped baklawa bites — made to impress at Eid gatherings, family events, and celebrations.</p>
+
+        <div class="hero__actions">
+          <a class="btn btn--gold" href="#shop">Shop Packs</a>
+          <a class="btn btn--outline" href="#gallery">See Photos</a>
+        </div>
+
+        <div class="trust reveal">
+          <div class="trust__item">
+            <span class="trust__icon">🍯</span>
+            <span class="trust__title">Fresh</span>
+            <span class="trust__desc">Made to order</span>
+          </div>
+          <div class="trust__item">
+            <span class="trust__icon">🎁</span>
+            <span class="trust__title">Gift-ready</span>
+            <span class="trust__desc">Elegant packaging</span>
+          </div>
+          <div class="trust__item">
+            <span class="trust__icon">⚡</span>
+            <span class="trust__title">Fast checkout</span>
+            <span class="trust__desc">Secure payment</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__media reveal">
+        <div class="hero-card glass-card">
+          <picture class="hero-picture">
+            <img class="hero-img" src="assets/images/hero.png" alt="Gold gift box of baklawa bites" loading="eager"/>
+          </picture>
+          <div class="hero-order" aria-label="Order small box">
+            <div class="hero-order__label">Small Box — $12.99</div>
+            <div class="hero-order__btn" id="buy-hero"></div>
+          </div>
+        </div>
+
+        <!-- Floating accent badges -->
+        <div class="hero-badge hero-badge--top reveal-delay-1">
+          <span>🌙</span> Eid Special
+        </div>
+        <div class="hero-badge hero-badge--bottom reveal-delay-2">
+          <span>✦</span> Made with Love
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative arch at bottom of hero -->
+    <div class="hero__arch" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,60 L0,30 Q360,0 720,28 Q1080,56 1440,20 L1440,60 Z" fill="rgba(255,248,232,0.04)"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ── SHOP ── -->
+  <section class="section" id="shop">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <p class="eyebrow">Shop</p>
+          <h2>Choose a pack size, add to cart.</h2>
+        </div>
+        <p class="muted">All trays packed with pistachio-dusted baklawa bites and tied with a gold ribbon.</p>
+      </div>
+
+      <div class="products">
+        <article class="product reveal">
+          <div class="product__badge">Gift</div>
+          <div class="product__media">
+            <img src="assets/images/products/12.webp" alt="Small pack — 12 pieces" loading="lazy"/>
+          </div>
+          <div class="product__body">
+            <h3>Small Box</h3>
+            <p>Perfect for gifting, tasting, or a small intimate celebration.</p>
+            <div class="product__meta">
+              <span class="price">$12.99</span>
+              <span class="note">~12 bites</span>
+            </div>
+            <div class="product__buy" id="buy-12"></div>
+          </div>
+        </article>
+
+        <article class="product product--featured reveal">
+          <div class="product__badge product__badge--gold">Most Popular</div>
+          <div class="product__media">
+            <img src="assets/images/products/24.webp" alt="Medium pack — 24 pieces" loading="lazy"/>
+          </div>
+          <div class="product__body">
+            <h3>Medium Tray</h3>
+            <p>The perfect middle ground — shareable and easy to serve at any gathering.</p>
+            <div class="product__meta">
+              <span class="price">$23.99</span>
+              <span class="note">~24 bites</span>
+            </div>
+            <div class="product__buy" id="buy-24"></div>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__badge product__badge--emerald">Event-Ready</div>
+          <div class="product__media">
+            <img src="assets/images/products/48.webp" alt="Large tray — 48 pieces" loading="lazy"/>
+          </div>
+          <div class="product__body">
+            <h3>Large Tray</h3>
+            <p>Event-ready tray — our best for offices, Eid gatherings &amp; celebrations.</p>
+            <div class="product__meta">
+              <span class="price">$44.95</span>
+              <span class="note">~48 bites</span>
+            </div>
+            <div class="product__buy" id="buy-48"></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Mini FAQ -->
+      <div class="divider"></div>
+      <div class="mini-faq reveal">
+        <div>
+          <p class="eyebrow">Quick Details</p>
+          <h3>Good to know.</h3>
+        </div>
+        <div class="qa">
+          <details open>
+            <summary>How does shipping work?</summary>
+            <p>Shipping and taxes are calculated at checkout. We pack trays carefully to stay crisp and presentable during delivery.</p>
+          </details>
+          <details>
+            <summary>Are the bites all identical?</summary>
+            <p>They're handmade — each bite is slightly unique. That's part of the charm (and the proof it's real).</p>
+          </details>
+          <details>
+            <summary>Can I order for an Eid event?</summary>
+            <p>Yes. If you need multiple trays, place your order and add a note in the cart — or reach out for timing coordination.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ── -->
+  <section class="section section--gallery" id="gallery">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <p class="eyebrow">Gallery</p>
+          <h2>Golden, crisp, and camera-ready.</h2>
+        </div>
+        <p class="muted">A peek at recent trays &amp; packaging.</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="gcard gcard--tall reveal"><img src="assets/images/gallery/gallery_1.jpg" alt="Baklawa gift box with ribbon" loading="lazy"/></figure>
+        <figure class="gcard reveal"><img src="assets/images/gallery/gallery_2.jpg" alt="Full tray of baklawa" loading="lazy"/></figure>
+        <figure class="gcard reveal"><img src="assets/images/gallery/gallery_3.jpg" alt="Open gold box of baklawa" loading="lazy"/></figure>
+        <figure class="gcard reveal"><img src="assets/images/gallery/gallery_4.jpg" alt="Baklawa held with love tag" loading="lazy"/></figure>
+        <figure class="gcard gcard--wide reveal"><img src="assets/images/gallery/gallery_5.jpg" alt="Close-up of pistachio baklawa" loading="lazy"/></figure>
+        <figure class="gcard reveal"><img src="assets/images/gallery/gallery_6.jpg" alt="Baklawa tray overhead" loading="lazy"/></figure>
+        <figure class="gcard reveal"><img src="assets/images/gallery/gallery_7.jpg" alt="Gold box with with love tag" loading="lazy"/></figure>
+        <figure class="gcard reveal"><img src="assets/images/gallery/gallery_8.jpg" alt="Freshly baked baklawa" loading="lazy"/></figure>
+        <figure class="gcard reveal"><img src="assets/images/gallery/gallery_9.jpg" alt="Open baklawa gift box" loading="lazy"/></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ── -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <p class="eyebrow">FAQ</p>
+          <h2>Every order made with care.</h2>
+        </div>
+        <p class="muted">Short, clear, and honest.</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="glass-card faq-card reveal">
+          <div class="faq-card__icon">🥜</div>
+          <h3>What's inside?</h3>
+          <p>Classic baklawa flavors with a crisp finish — made to be shareable and photo-friendly. Dusted with fresh pistachios.</p>
+        </div>
+        <div class="glass-card faq-card reveal">
+          <div class="faq-card__icon">⏰</div>
+          <h3>How fresh is it?</h3>
+          <p>Made to order. We aim for peak crispness and beautiful presentation on every single tray.</p>
+        </div>
+        <div class="glass-card faq-card reveal">
+          <div class="faq-card__icon">📦</div>
+          <h3>Custom orders?</h3>
+          <p>For events, leave a note in the cart at checkout. We'll follow up if anything needs clarification.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EID GREETING BANNER ── -->
+  <section class="eid-banner reveal">
+    <div class="container eid-banner__inner">
+      <div class="eid-banner__deco" aria-hidden="true">
+        <span class="star-shape">✦</span>
+        <span class="star-shape">✦</span>
+        <span class="star-shape">✦</span>
+      </div>
+      <p class="eid-banner__arabic">عيد مبارك</p>
+      <p class="eid-banner__sub">Eid Mubarak — May this Eid bring joy, sweetness, and blessings to your home.</p>
+      <a class="btn btn--gold" href="#shop">Order for Eid →</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="assets/images/logo.svg" alt="Baklawa Bites" width="28" height="28"/>
+      <span>Baklawa Bites</span>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> Baklawa Bites. All rights reserved.
+      <a class="muted" href="order-care.html" style="margin-left:.4rem;">Order care</a>
+    </p>
+    <a class="footer__top muted" href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" type="button" aria-label="Close">×</button>
+  <img class="lightbox__img" alt=""/>
+</div>
+
+<script defer src="assets/js/app.js"></script>
+</body>
+</html>
