@@ -35,24 +35,11 @@ fbq('track', 'PageView');
 <!-- Floating lanterns -->
 <div class="lanterns" aria-hidden="true">
   <div class="lantern l1">
-    <div class="lantern__body">
-      <div class="lantern__light"></div>
-      <div class="lantern__flame"></div>
-    </div>
+    <div class="lantern__body"><div class="lantern__light"></div><div class="lantern__flame"></div></div>
     <div class="lantern__string"></div>
   </div>
   <div class="lantern l2">
-    <div class="lantern__body">
-      <div class="lantern__light"></div>
-      <div class="lantern__flame"></div>
-    </div>
-    <div class="lantern__string"></div>
-  </div>
-  <div class="lantern l3">
-    <div class="lantern__body">
-      <div class="lantern__light"></div>
-      <div class="lantern__flame"></div>
-    </div>
+    <div class="lantern__body"><div class="lantern__light"></div><div class="lantern__flame"></div></div>
     <div class="lantern__string"></div>
   </div>
 </div>
@@ -66,10 +53,10 @@ fbq('track', 'PageView');
   <img class="moon-img" src="assets/images/crescent.webp" alt=""/>
 </div>
 
-<!-- Confetti container (triggered on load) -->
+<!-- Confetti -->
 <div class="confetti-wrap" aria-hidden="true" id="confetti"></div>
 
-<!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
+<!-- ═══ HEADER ═══ -->
 <header class="topbar" id="top">
   <div class="container topbar__inner">
     <a class="brand" href="#top" aria-label="Baklawa Bites Home">
@@ -79,25 +66,22 @@ fbq('track', 'PageView');
         <span class="brand__sub">عيد مبارك</span>
       </div>
     </a>
-
     <nav class="nav" aria-label="Primary">
       <a class="nav__link" href="#shop">Shop</a>
       <a class="nav__link" href="#gallery">Gallery</a>
       <a class="nav__link" href="#faq">FAQ</a>
     </nav>
-
     <div class="topbar__cta">
       <a class="btn btn--gold" href="#shop">Order Now</a>
     </div>
   </div>
 </header>
 
-<!-- ═══════════════════════════════ MAIN ═══════════════════════════════ -->
+<!-- ═══ MAIN ═══ -->
 <main>
 
   <!-- ── HERO ── -->
   <section class="hero" id="hero-section">
-    <!-- Eid banner ribbon -->
     <div class="eid-ribbon reveal">
       <span class="eid-ribbon__star">✦</span>
       <span>Eid Al-Fitr Collection — Celebrating the End of Ramadan</span>
@@ -113,12 +97,10 @@ fbq('track', 'PageView');
           <span class="hero__h1-line3">as it tastes.</span>
         </h1>
         <p class="subhead">Elegant trays of perfectly crisp, syruped baklawa bites — made to impress at Eid gatherings, family events, and celebrations.</p>
-
         <div class="hero__actions">
           <a class="btn btn--gold" href="#shop">Shop Packs</a>
           <a class="btn btn--outline" href="#gallery">See Photos</a>
         </div>
-
         <div class="trust reveal">
           <div class="trust__item">
             <span class="trust__icon">🍯</span>
@@ -148,18 +130,11 @@ fbq('track', 'PageView');
             <div class="hero-order__btn" id="buy-hero"></div>
           </div>
         </div>
-
-        <!-- Floating accent badges -->
-        <div class="hero-badge hero-badge--top reveal-delay-1">
-          <span>🌙</span> Eid Special
-        </div>
-        <div class="hero-badge hero-badge--bottom reveal-delay-2">
-          <span>✦</span> Made with Love
-        </div>
+        <div class="hero-badge hero-badge--top reveal-delay-1"><span>🌙</span> Eid Special</div>
+        <div class="hero-badge hero-badge--bottom reveal-delay-2"><span>✦</span> Made with Love</div>
       </div>
     </div>
 
-    <!-- Decorative arch at bottom of hero -->
     <div class="hero__arch" aria-hidden="true">
       <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0,60 L0,30 Q360,0 720,28 Q1080,56 1440,20 L1440,60 Z" fill="rgba(255,248,232,0.04)"/>
@@ -228,7 +203,6 @@ fbq('track', 'PageView');
         </article>
       </div>
 
-      <!-- Mini FAQ -->
       <div class="divider"></div>
       <div class="mini-faq reveal">
         <div>
@@ -253,27 +227,56 @@ fbq('track', 'PageView');
     </div>
   </section>
 
-  <!-- ── GALLERY ── -->
+  <!-- ── GALLERY — CARD DECK ── -->
   <section class="section section--gallery" id="gallery">
     <div class="container">
       <div class="section__head reveal">
         <div>
           <p class="eyebrow">Gallery</p>
-          <h2>Golden, crisp, and camera-ready.</h2>
+          <h2>Golden, crisp, <em style="font-style:italic;color:var(--gold)">camera-ready.</em></h2>
         </div>
-        <p class="muted">A peek at recent trays &amp; packaging.</p>
+        <p class="muted">Swipe, drag, or use the buttons to browse.</p>
       </div>
 
-      <div class="gallery">
-        <figure class="gcard gcard--tall reveal"><img src="assets/images/gallery/gallery_1.jpg" alt="Baklawa gift box with ribbon" loading="lazy"/></figure>
-        <figure class="gcard reveal"><img src="assets/images/gallery/gallery_2.jpg" alt="Full tray of baklawa" loading="lazy"/></figure>
-        <figure class="gcard reveal"><img src="assets/images/gallery/gallery_3.jpg" alt="Open gold box of baklawa" loading="lazy"/></figure>
-        <figure class="gcard reveal"><img src="assets/images/gallery/gallery_4.jpg" alt="Baklawa held with love tag" loading="lazy"/></figure>
-        <figure class="gcard gcard--wide reveal"><img src="assets/images/gallery/gallery_5.jpg" alt="Close-up of pistachio baklawa" loading="lazy"/></figure>
-        <figure class="gcard reveal"><img src="assets/images/gallery/gallery_6.jpg" alt="Baklawa tray overhead" loading="lazy"/></figure>
-        <figure class="gcard reveal"><img src="assets/images/gallery/gallery_7.jpg" alt="Gold box with with love tag" loading="lazy"/></figure>
-        <figure class="gcard reveal"><img src="assets/images/gallery/gallery_8.jpg" alt="Freshly baked baklawa" loading="lazy"/></figure>
-        <figure class="gcard reveal"><img src="assets/images/gallery/gallery_9.jpg" alt="Open baklawa gift box" loading="lazy"/></figure>
+      <!-- Deck layout: stack left, sidebar right -->
+      <div class="deck-layout reveal">
+
+        <!-- Card stack -->
+        <div class="deck-scene" id="deckScene" role="region" aria-label="Photo gallery">
+          <!-- Direction labels shown while dragging -->
+          <div class="drag-label drag-label--left" id="dragLeft" aria-hidden="true">← Back</div>
+          <div class="drag-label drag-label--right" id="dragRight" aria-hidden="true">Next →</div>
+          <!-- Cards injected by JS -->
+        </div>
+
+        <!-- Sidebar: counter + dots + buttons -->
+        <div class="deck-sidebar">
+          <div class="deck-counter">
+            <span class="deck-counter__cur" id="deckCur">1</span>
+            <span class="deck-counter__sep">/</span>
+            <span class="deck-counter__tot" id="deckTot">9</span>
+          </div>
+
+          <p class="deck-caption" id="deckCaption">Baklawa gift box on marble</p>
+
+          <div class="deck-dots" id="deckDots" role="tablist" aria-label="Gallery position"></div>
+
+          <!-- Arrow buttons — large, thumb-friendly -->
+          <div class="deck-btns">
+            <button class="deck-btn" id="deckPrev" aria-label="Previous photo" title="Previous (←)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M15 18l-6-6 6-6"/>
+              </svg>
+            </button>
+            <button class="deck-btn deck-btn--gold" id="deckNext" aria-label="Next photo" title="Next (→)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </button>
+          </div>
+
+          <p class="deck-hint">drag · swipe · ← →</p>
+        </div>
       </div>
     </div>
   </section>
@@ -288,7 +291,6 @@ fbq('track', 'PageView');
         </div>
         <p class="muted">Short, clear, and honest.</p>
       </div>
-
       <div class="faq-grid">
         <div class="glass-card faq-card reveal">
           <div class="faq-card__icon">🥜</div>
@@ -309,7 +311,7 @@ fbq('track', 'PageView');
     </div>
   </section>
 
-  <!-- ── EID GREETING BANNER ── -->
+  <!-- ── EID BANNER ── -->
   <section class="eid-banner reveal">
     <div class="container eid-banner__inner">
       <div class="eid-banner__deco" aria-hidden="true">
@@ -339,9 +341,9 @@ fbq('track', 'PageView');
   </div>
 </footer>
 
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox" aria-hidden="true">
-  <button class="lightbox__close" type="button" aria-label="Close">×</button>
+<!-- Lightbox (opens when a deck card is clicked/tapped while not dragging) -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+  <button class="lightbox__close" type="button" aria-label="Close photo">×</button>
   <img class="lightbox__img" alt=""/>
 </div>
 
